@@ -21,7 +21,7 @@ Ansible is an open-source automation platform used to:
 Audience
 
 This environmnet is intended for system engineers, system administrators, Cloud Admin, DevOps engineers.
- `Use Case`:
+- `Use Case`:
 - Maintain consistency across servers, enforce configuration standards, deploy applications or services and perform repetitive tasks without human error
 
 ##  How You Use This Infrastructure
