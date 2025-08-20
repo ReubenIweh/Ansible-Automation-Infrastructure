@@ -76,3 +76,27 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 
 
 ## Step-by-Step Setup
+
+- Update All Nodes
+
+`sudo dnf update -y`
+`sudo dnf install epel-release -y`
+
+- Install python and podman
+
+  `dnf install python3 python3-pip podman`
+
+- Set Static Hostnames
+
+<pre> ``` sudo hostnamectl set-hostname ansible-master # on master 
+sudo hostnamectl set-hostname worker1        # on worker1 
+sudo hostnamectl set-hostname worker2        # on worker2 
+sudo hostnamectl set-hostname worker3        # on worker3 ``` </pre>
+
+- Add to /etc/hosts on all machines:
+
+<pre> ```192.168.56.10 ansible-master 
+192.168.56.11 node1 
+192.168.56.12 node2 
+192.168.56.13 node3 ``` </pre>
+
