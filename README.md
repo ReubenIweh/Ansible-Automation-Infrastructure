@@ -75,9 +75,9 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 - SSH enabled
 
 
-## Step-by-Step Setup
+## Setup
 
-- Update All Nodes
+- **Update All Nodes**
 
 `sudo dnf update -y`
 `sudo dnf install epel-release -y`
