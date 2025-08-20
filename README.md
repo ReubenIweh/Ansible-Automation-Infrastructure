@@ -88,15 +88,42 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 
 - Set Static Hostnames
 
-<pre> ``` sudo hostnamectl set-hostname ansible-master # on master 
-sudo hostnamectl set-hostname worker1        # on worker1 
-sudo hostnamectl set-hostname worker2        # on worker2 
-sudo hostnamectl set-hostname worker3        # on worker3 ``` </pre>
+<pre> ```  
+          sudo hostnamectl set-hostname ansible-master        # on master 
+          sudo hostnamectl set-hostname worker1               # on worker1 
+          sudo hostnamectl set-hostname worker2               # on worker2 
+          sudo hostnamectl set-hostname worker3               # on worker3 ``` </pre>
 
 - Add to /etc/hosts on all machines:
+  
 
-<pre> ```192.168.56.10 ansible-master 
-192.168.56.11 node1 
-192.168.56.12 node2 
-192.168.56.13 node3 ``` </pre>
+<pre> ```
+        192.168.56.10        ansible-master 
+        192.168.56.11        node1 
+        192.168.56.12        node2 
+        192.168.56.13        node3 ``` </pre>
+
+- Create a Common Ansible User (If not already) 
+
+- `useradd ansible`
+- `echo "ansible:password" | sudo chpasswd`
+- `echo "ansible ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/ansible`
+
+- Install Ansible (on Master only)
+- `sudo dnf install ansible -y`
+- `ansible --version`
+
+- Setup Passwordless SSH from Master → Workers
+
+  Login as ansible on the master node:
+
+- `su - ansible`
+- `ssh-keygen`
+
+- Copy the SSH key to all workers:
+
+- `ssh-copy-id ansible@wnode1`
+- `ssh-copy-id ansible@node2`
+- `ssh-copy-id ansible@node3`
+
 
