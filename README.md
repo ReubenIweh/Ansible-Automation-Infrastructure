@@ -86,7 +86,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 
   `dnf install python3 python3-pip podman`
 
-- Set Static Hostnames
+- **Set Static Hostnames**
 
 <pre> ```  
           sudo hostnamectl set-hostname ansible-master        # on master 
