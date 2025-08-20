@@ -1,14 +1,43 @@
 # Ansible-Automation-Infrastructure
 
-System engineers, System Admin, DevOps engineers use automation to:
 
-- Maintain consistency across servers
+Ansible is an open-source automation platform used to:
 
-- Enforce configuration standards
+- Automate: Software provisioning, configuration management, and application deployment.
+- Manage: Large numbers of systems at once.
+- Orchestrate: Complex IT workflows across different environments
 
-- Deploy applications or services
+  📑 **Table of Contents**
+- [How You Use This Infrastructure](#how-you-use-this-infrastructure)
+- [Prerequisites](#prerequisites)
+- [Ansible Dev Automation](#Ansible-dev-automation)
+- [Infrastructure](#infrastructure)
+- [Disable Unnecessary Services](#disable-unnecessary-services)
+- [Playbooks](#playbooks)
+- [System prerequisites](#system-prerequisites)
+- [Step-by-Step Setup](#step-by-step-setup)
 
-- Perform repetitive tasks without human error
+
+
+Audience
+
+This environmnet is intended for system engineers, system administrators, Cloud Admin, DevOps engineers.
+- Use Case:
+- Maintain consistency across servers, enforce configuration standards, deploy applications or services and perform repetitive tasks without human error
+
+##  How You Use This Infrastructure
+
+Use Case: Learn and Practice Ansible. This is a safe, Dev lab to:
+
+- Experiment with Ansible modules and playbooks
+- Understand YAML syntax and automation design
+- Try failed scenarios and recoveries
+
+  ##  Prerequisites
+
+- VMware, cloud or any environment suitable
+- Rocky Linux 8 ISO
+- Basic networking and SSH setup
 
   # Ansible Dev Automation
 
@@ -34,11 +63,17 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 - `motd.yml`: Customize login banner
 - `cronjobs.yml`: Setup system update cron job
 
-## ⚙️ Run Playbooks
+##  Run Playbooks
 
 ``ansible-playbook -i inventory/hosts.ini playbooks/users.yml``
+
+
+## System prerequisites
 
 **All systems should be** 
 - Rocky Linux 8 Minimal
 - user: ansible
 - SSH enabled
+
+
+## Step-by-Step Setup
