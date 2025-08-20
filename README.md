@@ -12,7 +12,6 @@ Ansible is an open-source automation platform used to:
 - [Prerequisites](#prerequisites)
 - [Ansible Dev Automation](#Ansible-dev-automation)
 - [Infrastructure](#infrastructure)
-- [Disable Unnecessary Services](#disable-unnecessary-services)
 - [Playbooks](#playbooks)
 - [System prerequisites](#system-prerequisites)
 - [Step-by-Step Setup](#step-by-step-setup)
