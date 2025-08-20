@@ -56,7 +56,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 | worker2        | Managed Node  | 192.168.56.12 |
 | worker3        | Managed Node  | 192.168.56.13 |
 
-## 📂 Playbooks
+##  Playbooks
 
 - `users.yml`: Add users
 - `firewall.yml`: Configure firewalld
