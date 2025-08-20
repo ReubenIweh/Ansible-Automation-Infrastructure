@@ -82,7 +82,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 `sudo dnf update -y`
 `sudo dnf install epel-release -y`
 
-- Install python and podman
+- **Install python and podman**
 
   `dnf install python3 python3-pip podman`
 
@@ -94,7 +94,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
           sudo hostnamectl set-hostname worker2               # on worker2 
           sudo hostnamectl set-hostname worker3               # on worker3 ``` </pre>
 
-- Add to /etc/hosts on all machines:
+- **Add to /etc/hosts on all machines:**
   
 
 <pre> ```
@@ -103,24 +103,25 @@ This project sets up a full Ansible Development environment using Vmware and Roc
         192.168.56.12        node2 
         192.168.56.13        node3 ``` </pre>
 
-- Create a Common Ansible User (If not already) 
+- **Create a Common Ansible User (If not already)** 
 
 - `useradd ansible`
 - `echo "ansible:password" | sudo chpasswd`
 - `echo "ansible ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/ansible`
 
-- Install Ansible (on Master only)
+- **Install Ansible (on Master only)**
+  
 - `sudo dnf install ansible -y`
 - `ansible --version`
 
-- Setup Passwordless SSH from Master → Workers
+- **Setup Passwordless SSH from Master → Workers**
 
   Login as ansible on the master node:
 
 - `su - ansible`
 - `ssh-keygen`
 
-- Copy the SSH key to all workers:
+- **Copy the SSH key to all workers:**
 
 - `ssh-copy-id ansible@wnode1`
 - `ssh-copy-id ansible@node2`
