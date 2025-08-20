@@ -47,7 +47,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 - SSH key authentication setup
 - Real-world automation tasks using Ansible
 
-## 🖥️ Infrastructure
+## Infrastructure
 
 | Hostname       | Role          | IP Address      |
 |----------------|---------------|------------------|
