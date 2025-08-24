@@ -160,3 +160,5 @@ This project sets up a full Ansible Development environment using Vmware and Roc
         shell: /bin/bash
 ```
 - **Run the playbook**
+
+ ![Install adduser](./images/adduser.png)
