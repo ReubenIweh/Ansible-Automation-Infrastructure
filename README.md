@@ -15,6 +15,7 @@ Ansible is an open-source automation platform used to:
 - [Playbooks](#playbooks)
 - [System prerequisites](#system-prerequisites)
 - [Setup](#setup)
+- [Real-World Ansible Automation Tasks](#real-world-ansible-automation-tasks)
 
 
 
@@ -138,3 +139,6 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 - **test conectivity betwwen master and all nodes by using the ping command**
 
   ![Install test](./images/test.png)
+
+
+## Real-World Ansible Automation Tasks
