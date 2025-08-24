@@ -149,7 +149,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 ```yaml
 ---
 - name: Create users
-  hosts: workers
+  hosts: all
   become: true
   tasks:
     - name: Ensure 'devops' user exists
