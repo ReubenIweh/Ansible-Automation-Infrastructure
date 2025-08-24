@@ -159,4 +159,4 @@ This project sets up a full Ansible Development environment using Vmware and Roc
         state: present
         shell: /bin/bash
 ```
-
+- **Run the playbook**
