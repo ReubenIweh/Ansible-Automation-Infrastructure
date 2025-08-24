@@ -142,3 +142,20 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 
 
 ## Real-World Ansible Automation Tasks
+
+- **Create a User Across All Nodes**
+- `change into the automation directory and create your first playbook`
+-  `vi user.yml`
+```yaml
+---
+- name: Create users
+  hosts: workers
+  become: true
+  tasks:
+    - name: Ensure 'devops' user exists
+      user:
+        name: devops
+        state: present
+        shell: /bin/bash
+```
+
