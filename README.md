@@ -38,6 +38,7 @@ Use Case: Learn and Practice Ansible. This is a safe, Dev lab to:
 - VMware, cloud or any environment suitable
 - Rocky Linux 8 ISO
 - Basic networking and SSH setup
+- Previous knowledge of ansible required 
 
   # Ansible Dev Automation
 
