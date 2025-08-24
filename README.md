@@ -127,4 +127,7 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 - `ssh-copy-id ansible@node2`
 - `ssh-copy-id ansible@node3`
 
-
+- **Create an automation project directory where you are going to be working from**
+- `Sign into the master server as user ansible. ssh ansible@master`
+- `Create the automation directory. mkdir automation`
+- `Create both inventory and ansible.cfg files`
