@@ -130,4 +130,11 @@ This project sets up a full Ansible Development environment using Vmware and Roc
 - **Create an automation project directory where you are going to be working from**
 - `Sign into the master server as user ansible. ssh ansible@master`
 - `Create the automation directory. mkdir automation`
-- `Create both inventory and ansible.cfg files`
+- `Create both inventory and ansible.cfg files as shown bellow`
+
+  ![Install inventory](./images/inventory.png)
+
+
+- **test conectivity betwwen master and all nodes by using the ping command**
+
+  ![Install test](./images/test.png)
